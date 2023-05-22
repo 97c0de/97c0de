@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+	.container {
+		margin-bottom:50px;
+	}
+	/* product 이미지 시작 */
+	.product_img, .product_info {
+		margin-top:50px;
+	}
+	.product_img {
+		width:50%;
+		height:350px;
+		text-align:center;
+	}
+	
+	.product_img img{
+		
+		max-width:370px;
+		
+	}
+	
+	/* product 이미지 끝 */
+	/* product 정보 시작 */
+	.product_info {
+		width:50%;
+		border-bottom:2px solid #555;
+		margin-bottom:15px;
+	}
+	.product_info th {
+		text-align:left;
+		padding-left:20px;
+		font-weight:normal;
+	}
+	.product_info tr:nth-child(1) {
+		border-top:2px solid #555;
+		width:100%;
+		height:60px;
+		font-size:18px;
+		text-align:left;
+	}
+	.product_info tr:not(:first-child) {
+		border-top:1px solid #ccc;
+		height:68px;
+	}
+	.product_info tr:not(:first-child) th {
+		font-size:14px;
+		width:90px;
+	}
+	.product_info tr:not(:first-child) td {
+		padding-left:10px;
+	}
+	.product_info tr:nth-child(6) td:nth-child(2) {
+		width:180px;
+	}
+	.product_info tr:last-child {
+		border-bottom:2px solid #555;
+		height:50px;
+	}
+	.product_info tr:last-child td {
+		font-size:18px;
+		color:#e50914;
+	}
+	/* product 정보 끝 */
+	/* 북마크하기 시작 */
+	.like {
+		display:block;
+		width:100%;
+		text-align:right;
+		margin-bottom:30px;
+	}
+	.like img {
+		float:right;
+		display:inline;
+		padding-left:5px;
+	}
+	.like p {
+		font-size:16px;
+		line-height:23px;
+	}
+	/* 북마크하기 끝 */
+	/* 내용 시작 */
+	.product_content {
+		width:100%;
+		border-top:1px solid #999;
+		border-bottom:1px solid #999;
+		padding-top:30px;
+		padding-bottom:30px;
+		padding-left:20px;
+		margin-bottom:30px;
+	}
+	/* 내용 끝 */
+	/* 상영종료 시작 */
+	.product_option {
+		width:100%;
+		text-align:right;
+		font-size:13px;
+		margin-bottom:50px;
+	}
+	.product_option a {
+		padding:15px 15px;
+	}
+	.product_option a:first-child {
+		padding:16px 16px;
+		background:#e50914;
+		color:#fff;
+	}
+	.product_option a:not(:first-child) {
+		border: 1px solid #e50914;
+	    background: #fff;
+	    color: #e50914;
+	}
+	/* 상영종료 끝 */
+	/* 댓글 시작 */
+	.reply {
+		width:100%;
+		padding-top:30px;
+		border-top:1px solid #ddd;
+		padding-bottom:20px;
+	}	
+	.reply textarea {
+		width:80%;
+		height:70px;
+		float:left;		
+	}
+	.reply p#text {
+		display:inline;
+		float:left;
+		margin-left:50px;
+		margin-right:30px;
+	}
+	.reply p:nth-child(3) {
+		display:inline;
+	}
+	.reply input {
+		border:1px solid #999;
+		cursor:pointer;
+		background:none;
+		width:90px;
+		height:70px;
+		outline:none;
+		background: #fff;
+	}
+	/* 댓글 끝*/
+	/* 로그인 해주삼 */
+	#needlogin {
+		width:100%;
+		margin-top:30px;
+		margin-bottom:30px;
+		padding-left:30px;
+	}
+	/* 댓글 보기 시작 */
+	.reply_view {
+		width:100%;
+		display:flex;
+		flex-flow:row nowrap;
+		border-top:1px solid #ddd;
+	}
+	.reply_view p#replyid {
+		width:130px;
+		padding:15px 35px;
+	}
+	.reply_view form {
+		display:flex;
+		width:100%;
+		flex-flow:row nowrap;
+	}
+	.reply_view span {
+		width:90%;
+		padding-right:30px;
+		padding-top:15px;
+		padding-bottom:15px;
+	}
+	#reply_option {
+		display:inline;
+		width:10%;
+		padding-top:15px;
+		padding-bottom:15px;
+	}
+	#reply_option a {
+		padding-left:20px;
+		color:#777;
+	}
+	#reply_option a:hover {
+		color:#d91921;
+	}
+	#reply_option button {
+		border:none;
+		cursor:pointer;
+		background:none;
+		font-size:12px;
+		color:#777;
+		outline:none;
+	}
+	/* 댓글 보기 끝 */
+	div#noreply {
+		margin-bottom:20px;
+	}

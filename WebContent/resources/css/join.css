@@ -1,0 +1,298 @@
+@charset "UTF-8";
+ #wrap{
+ 	width:800px;
+	margin:0 auto;
+	padding-left:200px;
+	position:relative;
+ }
+a {
+ 	color:#333;
+ 	text-decoration:none;
+ }
+#header{
+	height:100px;
+}
+#section{
+	height:600px;
+	clear:both;
+}
+#section h2 {
+	font-size:25px;
+}
+#footer{
+	height:200px;
+	clear:both;
+}
+#yakgwan{
+	margin-left:50px;
+}
+#iyong{
+	margin-left:10px;
+}
+#ta{
+	margin-left:14px;
+}
+#gaipbutton{
+	margin:10px auto;
+	background-color:#B5E61D;
+}
+#tablekan{
+	margin:0 auto;
+}
+#agreebutton{
+	margin-left:300px;
+}
+#tablekan{
+	border:0px solid black;
+	border-collapse:collapse;
+}
+#textbox1{
+	margin-left:45px;
+}
+.inputbox{
+	margin-left:50px;
+}
+.yakk{
+margin:10px auto;
+}
+#check_button { height:32px; }
+#gender { width:20px; height:20px; }
+#pId, #password_1, #password_2, #name, #year, #month, #day, #email_id, #email_address, #phone_number { font-size:20px; line-height:30px; }
+#join_table { margin:0px auto; }
+#join_button { text-decoration:none; font-size:17px; color:black; }
+	#join_button:hover { color:blue; text-decoration:none; }
+#join_footer:link { color: black; text-decoration: none;}
+        #join_footer:visited { color: black; text-decoration: none;}
+        #join_footer:hover { color: black; text-decoration: none;}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        	.container {
+		width:1200px;
+		margin:0 auto;
+	}
+	h2, form {
+		margin-left:200px;
+		margin-right:200px;
+	}
+	h2 {
+		text-align:center;
+		padding-top:20px;
+	}
+	h2 a {
+		color:#333;
+		text-decoration:none;
+	}
+	form{
+		 background:#313139;
+		 padding: 20px;
+	}
+	form#join h3 {
+		font-size:27px;
+		font-weight:normal;
+		
+		
+	}
+	form#join input {
+		padding-left:30px;
+		font-size:16px;
+	}
+	form#join #id_area input {
+		width:624px;
+		height:50px;
+		margin-right:5px;
+	}
+	form#join #id_area button {
+		border:none;
+		display:inline;
+		height:55px;
+		background:#666;
+		color:#fff;
+		width:90px;
+		cursor:pointer;
+		outline:none;
+	}
+	form#join #pw_area {
+		margin-top:20px;
+		border:1px solid #999;
+	}
+	form#join #pw_area input {
+		height:50px;
+		width:768px;
+		border:none;
+	}
+	form#join #pw_area input#password_1 {
+		border-bottom:1px solid #999;
+		width: 450px;
+	}
+	form#join #pw_area input#password_2 {
+		width:450px;
+	}
+	form#join #pw_area span {
+		width:238px;
+		height:50px;
+		font-size:14px;
+		text-align:right;
+		padding-left:15px;
+	}
+	form#join #pri_area {
+		margin-top:20px;
+		width:760px;
+		height:163px;
+		border:1px solid #999;
+	}
+	form#join #pri_area #gender_area {
+		height:50px;
+		padding-top:6px;
+		background:#fff;
+		border-bottom:1px solid #999;
+		width:100%;
+		float:left;
+		display: block;
+	}
+	form#join #pri_area #gender_area input#gender {
+		margin-top:12px;
+	}
+	form#join #pri_area #gender_area p {
+		float:left;
+		width:80px;
+		padding-left:30px;
+		line-height:4px;
+	}
+	form#join #pri_area input#name {
+		width:95%;
+		height:48px;
+		float:left;
+		border:none;
+		border-right:1px solid #999;
+		border-bottom:1px solid #999;
+	}
+	form#join #birth_area {
+		display:block;
+		background:#fff;
+		height:100px;
+	}
+	form#join #birth_area p {
+		float:left;
+		line-height:18px;
+		padding-left:30px;
+		padding-right:60px;
+	}
+	form#join #birth_area input {
+		margin-top:10px;
+		width:140px;
+		height:30px;
+		border:none;
+		padding-left:10px;
+		margin-right:5px;
+	}
+	form#join #birth_area input#month {
+		margin-left:10px;
+	}
+	form#join #birth_area input#day {
+		margin-left:10px;
+	}
+	form#join #birth_area span {
+		border-left:1px solid #999;
+		width:3px;
+		margin-left:10px;
+		margin-right:10px;
+	}
+	form#join #email_area {
+		margin-top:20px;
+		border:1px solid #999;
+		width:760px;
+		height:50px;
+		background:#fff;
+		color: #000;
+	}
+	form#join #email_area input {
+		border:none;
+		margin-top:10px;
+		height:30px;
+	}
+	form#join #email_area input#email_id {
+		width:330px;
+		margin-left:20px;
+		padding-left:10px;
+		margin-right:10px;
+	}
+	form#join #email_area input#email_address {
+		width:320px;
+		margin-left:20px;
+		padding-left:10px;
+	}
+	form#join #phonenum_area {
+		margin-top:20px;
+		font-size:15px;
+		border:1px solid #999;
+	}
+	form#join #phonenum_area input {
+		height:45px;
+		border:none;
+	}
+	form#join #phonenum_area input#num1 {
+		margin-right:10px;
+		width:194px;
+	}
+	form#join #phonenum_area input#num2 {
+		margin-left:10px;
+		margin-right:10px;
+		width:220px;
+	}
+	form#join #phonenum_area input#num3 {
+		margin-left:10px;
+		width:220px;
+	}
+	form#join #button_area {
+		width:360px;
+		margin:35px auto;
+		padding-bottom:30px;
+	}
+	form#join #button_area a {
+		color:#333;
+		text-decoration:none;
+	}
+	form#join #button_area p {
+		border:1px solid #333;
+		width:160px;
+		height:42px;
+		text-align:center;
+		padding-top:17px;
+		float:left;
+		display:inline;
+		margin-right:10px;
+		font-size:16px;
+		cursor:pointer;
+		opacity: 0.9;
+	}
+	form#join #button_area p:hover {
+		opacity: 1;
+	}
+	form#join #button_area input {
+		width:160px;
+		height:62px;
+		text-align:center;
+		border:none;
+		display:inline;
+		padding-left:0;
+		background:#d91921;
+		margin-top:15px;
+		color:#fff;
+		font-size:17px;
+		outline:none;
+		cursor:pointer;
+		opacity: 0.9;
+	}
+	form#join #button_area input:hover {
+		opacity: 1;
+	}

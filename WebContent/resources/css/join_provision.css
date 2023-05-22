@@ -1,0 +1,78 @@
+@charset "UTF-8";
+#wrap {
+	width: 800px;
+	min-height: 300px;
+	margin: 0 auto;
+	position: relative;
+	background-color: white
+}
+
+#header #footer #section {
+	border: 1px solid black;
+	position: absolute;
+	margin: 5px;
+	padding: 5px;
+}
+
+#header {
+	background-color: white;
+	height: 100px;
+	clear: both;
+}
+
+#section {
+	background-color: white;
+	height: 600px;
+	clear: both;
+	margin: 1px auto;
+}
+
+#footer {
+	background-color: #F2F4F7;
+	height: 200px;
+	clear: both;
+}
+
+#yakgwan {
+	margin-left: 50px;
+}
+
+#iyong {
+	margin-left: 10px;
+}
+
+#ta {
+	margin-left: 14px;
+}
+
+#gaipbutton {
+	margin: 10px auto;
+	background-color: #B5E61D;
+}
+
+#tablekan {
+	margin: 0 auto;
+}
+
+#agreebutton {
+	margin-left: 300px;
+}
+
+.yakk {
+	margin: 10px auto;
+}
+
+a:link {
+	color: black;
+	text-decoration: none;
+}
+
+a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+	text-decoration: none;
+}

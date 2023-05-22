@@ -1,0 +1,78 @@
+@charset "UTF-8";
+#qna_write_form{
+	color: #000;
+	background: #343a40;
+    padding: 10px;
+}
+	h2 {
+		font-size:25px;
+		margin-top:50px;
+		width:1200px;
+		padding-bottom:22px;
+		border-bottom:2px solid #555;
+		color: #fff;
+	}
+	.qna_table {
+		width:100%;
+		margin-top:20px;
+		margin-bottom:30px;
+		background: #fff;
+	}
+	
+	
+	.qna_table tr {
+		height:50px;
+		border-top:1px solid #999;
+		border-bottom:1px solid #999;
+	}
+	.qna_table tr th {
+		width:150px;
+		font-size:16px;
+		background:#eee;
+		font-weight:normal;
+		padding: 0px 10px
+	}
+	.qna_table td {
+		padding-left:10px;
+	}
+	.qna_table td input {
+		width:100%;
+		height:30px;
+		outline:none;
+	}
+	.qna_table td textarea {
+		width:1100px;
+		height:400px;
+		margin-top:10px;
+		border:none;
+		outline:none;
+	}
+	.form_button {
+		text-align:right;
+		margin-bottom:100px;
+	}
+	.form_button button {
+		border:1px solid #666;
+		color:#666;
+		background:none;
+		width:90px;
+		height:40px;
+		line-height:15px;
+		outline:none;
+		cursor:pointer;
+	}
+	.form_button input {
+		background:#666;
+		color:#fff;
+		border:none;
+		width:90px;
+		height:40px;
+		line-height:15px;
+		outline:none;
+		cursor:pointer;
+	}
+	
+	#reset_button{
+		color: #000;
+		background: #fff;
+	}

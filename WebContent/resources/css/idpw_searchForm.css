@@ -1,0 +1,122 @@
+@charset "UTF-8";
+	body > table {
+		margin-bottom:50px;
+	}
+	table button {
+		border:none;
+		outline:none;
+		text-align:center;
+		width:250px;
+		height:50px;
+		float:left;
+		background:white;
+		cursor:pointer;
+	}	
+	table button.on {
+		border:1px solid #777;
+		border-bottom:0;
+		color:#e50914;
+	}
+	table button.off {
+		border:1px solid #ccc;
+		border-bottom:1px solid #777;
+		background:#eee;
+	}
+	/* 아이디 찾기 시작 */
+	table#id_table {
+		border:1px solid #ddd;
+		width:500px;
+		border-collapse:collapse;
+	}
+	table#id_table tr {
+		height:45px;
+		border-bottom:1px solid #ddd;
+	}
+	table#id_table td:nth-child(1) {
+		width:120px;
+		background:#eee;
+		border-right:1px solid #ddd;
+		text-align:center;
+	}
+	table#id_table td:nth-child(2) {
+		padding-left:10px;
+	}
+	table#id_table tr:nth-child(1) input {
+		width:250px;
+		height:20px;
+		padding-left:5px;
+	}
+	table#id_table tr:nth-child(2) input {
+		width:55px;
+		margin-right:5px;
+		height:20px;
+		padding-left:5px;
+	}
+	table#id_table tr:nth-child(3) input {
+		width:120px;
+		margin-right:5px;
+		height:20px;
+		padding-left:5px;
+	}
+	/* 아이디 찾기 끝 */
+	div#search_button {
+		margin-top:30px;
+		float:left;
+		margin-right:10px;
+		margin-left:25%;
+	}
+	div#search_button input {
+		width:120px;
+		height:45px;
+		background:#e50914;
+		border:none;
+		outline:none;
+		cursor:pointer;
+		color:#fff;
+		line-height:15px;
+	}
+	div#close_button {
+		margin-top:30px;
+		margin-left:10px;
+	}
+	div#close_button input {
+		width:120px;
+		height:45px;
+		background:#fff;
+		border:1px solid #777;
+		outline:none;
+		cursor:pointer;
+		color:#333;
+		line-height:15px;
+	}
+	/* 비밀번호 찾기 시작 */
+	table#pw_table {
+		border:1px solid #ddd;
+		width:500px;
+		border-collapse:collapse;
+	}
+	table#pw_table tr {
+		height:45px;
+		border-bottom:1px solid #ddd;
+	}
+	table#pw_table td:nth-child(1) {
+		width:120px;
+		background:#eee;
+		border-right:1px solid #ddd;
+		text-align:center;
+	}
+	table#pw_table td:nth-child(2) {
+		padding-left:10px;
+	}
+	table#pw_table tr:nth-child(1) input {
+		width:250px;
+		height:20px;
+		padding-left:5px;
+	}
+	table#pw_table tr:nth-child(2) input {
+		width:120px;
+		margin-right:5px;
+		height:20px;
+		padding-left:5px;
+	}
+	/* 비밀번호 찾기 끝 */

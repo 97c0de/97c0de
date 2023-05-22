@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+	#movie_writeForm_table {
+		width:100%;
+		margin-top:80px;
+	 	color:#000;
+	}
+	#movie_writeForm_table h2 {
+		font-size:25px;
+		padding-bottom:20px;
+		margin-bottom:50px;
+		width:100%;
+		border-bottom:2px solid #555;
+	}
+	#movie_writeForm_table table {
+		width:100%;
+		margin-bottom:30px;
+		background: #fff;
+	}
+	#movie_writeForm_table table tr:nth-child(6) td {
+		padding-top:10px;
+	}
+	#movie_writeForm_table table tr:nth-child(6) textarea {
+		border:none;
+		width:100%;
+		outline:none;
+	}
+	#movie_writeForm_table table td {
+		padding-left:10px;
+	}
+	#movie_writeForm_table table th {
+		font-size:16px;
+		font-weight:normal;
+		color:#333;
+		width:150px;
+		background:#eee;
+		padding: 10px;
+	}
+	#movie_writeForm_table table th:nth-child(3) {
+		border-left:1px solid #999;
+	}
+	#movie_writeForm_table table tr {
+		border-top:1px solid #999;	
+	}
+	#movie_writeForm_table table tr:last-child {
+		border-bottom:1px solid #999;
+	}
+	#movie_writeForm_table table tr:nth-child(5) input {
+		height:30px;
+		width:1000px;
+	}
+	#movie_writeForm_table table input {
+		outline:none;
+		padding-left:5px;
+		width: 80px;
+	}
+	#movie_writeForm_table table select {
+		width:200px;
+		height:30px;
+		outline:none;
+		padding-left:3px;
+		padding-bottom:3px;
+	}
+	#movie_writeForm_table table tr:not(:nth-child(9)) {
+		height:50px;
+	}
+	#movie_writeForm_table table #locate, #movie_writeForm_table table #date {
+		width:120px;
+		height:30px;
+		margin-right:3px;
+	}
+	#movie_writeForm_table table #locate:last-child, #movie_writeForm_table table #date:last-child {
+		margin-left:7px;
+	}
+	#movie_writeForm_table table #price, #movie_writeForm_table table #amount, #movie_writeForm_table table #running_time,#movie_writeForm_table table #phone_number2,#movie_writeForm_table table #phone_number3 {
+		width:220px;
+		height:30px;
+		margin-right:5px;
+	}
+	.write_option {
+		text-align:right;
+		margin-bottom:100px;
+	}
+	.write_option p {
+		display:inline;
+		font-size:14px;
+	}
+	.write_option #before_fix p {
+		border:1px solid #e50914;
+		color:#666;
+		padding:14px 10px;
+	}
+	.write_option #fixed {
+		border:0;
+		outline:0;
+		background-color:transparent;
+		padding:15px 2px;
+	}
+	.write_option #fixed p {
+		background:#e50914;
+		padding:15px 20px;
+		color:#fff;
+	}
+	
+	#before_fix p{
+		background: #fff;
+		color: #000;
+	}

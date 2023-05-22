@@ -1,0 +1,612 @@
+@charset "UTF-8";
+* { padding:0; margin:0; box-sizing:border-box; }
+section, header, footer, aside, article, nav { display:block; }
+.movie_image { border:0; vertical-align:top; }
+li { list-style:none; list-style-position:inside; }
+a { text-decoration:none; color:#fff; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; }
+address { font-style:normal; }
+table, td, th { border-collapse:collapse; }
+
+/* ----- 여기까지 기본 reset 스타일 ----- */
+
+body { font-family:"나눔고딕", sans-serif;
+	font-size:12px;
+	line-height:18px;
+	color:#fff;
+	background: #18181b;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+#wrap {
+	width:100%;
+    margin:0 auto;
+}
+nav ul li, header ul li {
+	display: inline;
+}
+.on {
+	display: none;
+}
+
+.bx-wrapper {
+		border:0;
+		box-shadow:0 0 0 #fff;
+}
+header span input {
+	margin-top:5px;
+}
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+    text-align: center;
+    width: 100%;
+}
+a:hover {
+    color: #d91921;
+    text-decoration: underline;
+}
+
+/* ----- 여기까지 참조용 기본 레이아웃 스타일 ----- */
+.container {
+	width:1200px;
+	display:flex;
+	margin:0 auto;
+    flex-flow:row wrap;
+    
+}
+/* header 시작 */
+header {
+	height:120px;
+	margin:0 auto;
+	width:100%;
+    border-bottom:1px solid #aaa;
+    background: #343a40;
+    color: #fff;
+}
+header h1 {        /* 로고 이미지 넣었을 때 너비 안맞으면 img에 width:100%; 줄것 */
+    width:20%;
+    float:left;
+    text-align:center;
+    padding-right:10px;
+}
+header form {
+	border:3px solid #d91921;
+	width:47%;
+	display:flex;
+	flex-flow:row nowrap;
+	background: #fff;
+}
+header span{
+    font-size:15px;
+	width:100%;
+}
+header select {
+	border:none;
+	height:40px;
+	outline:none;
+	width:19%;
+	margin-left:10px;
+	font-size:14px;
+	padding-bottom:2px;
+}
+header span input {
+	outline:none;
+	margin-left:10px;
+	border:none;
+	width:78%;
+	display:inline-block;
+	float:left;
+	margin-top:5px;
+	height:30px;
+}
+header span button {
+	outline:none;
+	height:40px;
+	border:none;
+    background:#d91921;
+    width:14%;
+    margin-left:1%;
+    float:right;
+}
+header span button img {
+	background:#d91921;
+}
+header span.on{
+    font-size:15px;
+	font-color:#1ec544;
+}
+header ul.top_menu { 
+	padding-top:15px;
+	padding-left:100px;
+	width:33%;
+	display:flex;
+	flex-flow:row nowrap;
+	}
+header ul.top_menu li {
+    font-size:14px;
+    width:25%;
+    text-align:center;
+}
+/* header 끝 */
+/* nav 시작 */
+nav {
+	height:50px;
+	border-bottom:1px solid #d91921;
+}
+nav ul {
+    width:100%;
+    height:50px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-around;
+    align-items:center;
+}
+nav ul li {
+    font-size:17px;
+    line-height:22px;
+    color:#000;
+}
+
+nav ul li:hover a {
+	color:#d91921;
+}
+nav ul li img {
+	width:32px;
+	padding-right:8px;
+	float:left;
+}
+
+nav ul li a {
+	color:#fff;
+}
+/* nav 끝 */
+.bxslider img {
+	width:100%;
+}
+section.default {
+    width:100%;
+    border:10px;
+    background:#1b1b1b;
+    color:#fff;
+    margin-bottom: 50px;
+}
+/* 메인 영화리스트 스타일 시작 */
+#movie_list_wrap {
+	width:100%;
+	margin:0 auto;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-between;
+}
+#movie_list_wrap > div {
+	 background:#fff !important;
+	background-image: linear-gradient(rgba(0, 0, 0, 0) -100%, rgba(0, 0, 0, 0.9) 90%) !important;
+	
+	cursor: pointer;
+}
+
+#movie_list_wrap .card{
+	width: 217px;
+	margin-bottom: 20px;
+}
+
+#movie_list_wrap > div  .img {
+	height: 325px;
+		
+}
+
+#movie_list_wrap > div  .img img {
+	height: 100%;	
+}
+
+
+#movie_list_wrap > div .text p{
+	color: #fff !important;
+}
+
+#movie_list_wrap > div:hover, #movie_list_wrap > div:hover .text  , #movie_list_wrap > div:hover .text p{
+	background-image: none !important;
+	 background:#fff !important;
+	 color:#000 !important;
+}
+#movie_list_wrap > div .text:hover{
+	 color:#000 !important;
+}
+.table { 
+	width:31.8%;
+	height:295px;
+	border:1px solid #bbb;
+	margin-bottom:20px;
+}
+.table .img {
+	height:200px;
+}
+.table .img img {
+	width:100%;
+	height:200px;
+}
+.text {
+	padding:10px;
+}
+.text h4 { font-size:16px;
+	width: 200px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.text p {
+	line-height:30px;
+	
+}
+.text p.f-15{
+	font-size:14px;
+	width: 200px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.text p:nth-child(3) {
+	color:#888;
+	float:left;
+}
+.text p:nth-child(4) {
+	color:#888;
+	float:left;
+	font-size:13px;
+}
+.text p:nth-child(5) {
+	color:#888;
+	float:right;
+	font-size:13px;
+}
+.text p:nth-child(3) img {
+	padding-top:5px;
+	margin-right:5px;
+	float:left;
+}
+.page_num span {
+	font-size:17px;
+	font-weight:light;
+}
+#update_item {
+	width:100px;
+	height:40px;
+	text-align:center;
+	border:1px solid #d91921;
+	margin-left:92%;
+	font-size:14px;
+	margin-bottom:60px;
+}
+#update_item_button{
+	background-color:#d91921;
+	border:0;
+	outline:0;
+  	width: 100px;
+    height: 40px;
+    margin-bottom: 60px;
+    cursor:pointer;
+    color: #fff;
+    border-color: #d91921;
+}
+/* 메인 영화리스트 스타일 끝*/
+/* footer 시작 */
+footer {
+    width:100%;
+    height:183px;
+   
+    margin-top: 100px;
+    background: #000;
+    color: #fff;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+    
+}
+footer .footer01 {
+	height:50px;
+	border-top:2px solid #d91921;
+	border-bottom:1px solid #aaa;
+}
+footer .footer01 ul li a {
+	color:#777;
+}
+footer .footer01 ul {
+	display:flex;
+	flex-flow:row nowrap;
+	width:100%;
+	padding-top:17px;
+	font-size:13px;
+}
+footer .footer01 ul li {
+	width:12.5%;
+	text-align:center;
+	line-height:15px;
+}
+footer .footer01 ul li:not(:last-child) {
+	border-right:1px solid #999;
+}
+footer .footer02 {
+	margin-top:30px;
+}
+footer h1 {
+    width:200px;
+}
+footer p {
+	margin-left:30px;
+    font-size:13px;
+    line-height:17px;
+    color:#fff;
+    line-height: 80px;
+    font-weight: 600;
+}
+/* footer 끝 */
+.sitename-second {
+    color: #e50914;
+}
+
+.sitename-first {
+    color: #e50914;
+}
+
+.my_menu li a{
+	color:#000;
+}
+
+.text-red{
+	 color: #e50914;
+}
+
+.text-green{
+	color: #198754;
+}
+
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #fff !important;
+} 
+
+.bx-wrapper .bx-pager.bx-default-pager .bx-pager-link.active{
+	background: #d91921 !important;
+} 
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+    text-align: center !important;
+    width: 100% !important;
+}
+.banner {
+	max-width: 1657px;
+	margin: 0 auto;
+}
+.banner .slickSlider li{
+	height: 420px;
+}
+.banner .slickSlider li a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.banner_title {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.5rem;
+    top: -314px;
+    position: relative;
+    left: 50px;
+    color: #fff;
+}
+.banner_description {
+    font-size: 1rem;
+    font-weight: 500;
+    height: 80px;
+    line-height: 1.3;
+    max-width: 400px;
+    padding-top: 1rem;
+    width: 45rem;
+    position: relative;
+    top: -300px;
+    color: #fff;
+    left: 50px;
+}
+
+.banner-p{
+    position: relative;
+    top: -300px;
+    color: #fff;
+    left: 50px;
+}
+
+
+
+@font-face { font-family: 'TTTogether'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/TTTogetherA.woff') format('woff'); font-weight: normal; font-style: normal; }
+ 
+a#topBtn {
+	display:none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 120px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    color: #dc3545;
+    box-shadow: 0 0 15px #dc3545;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .8);
+    text-align: center;
+    line-height: 58px !important;
+    font: normal 16px "TTTogether";     
+    text-transform: lowercase;
+    z-index: 9999; 
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+}
+ 
+ 
+a#topBtn:hover {
+    color: #fff;
+    background: #dc3545;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.card-detail {
+	    margin-top: 30px;
+	    width: 100%;
+}
+
+
+
+
+.carousel{
+  z-index: -1;
+}
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 40rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*
+  width: 100%;
+   height: 40rem; */
+    width: auto;
+   height: 431px;
+}
+
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; 
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+/* 반응형 CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* 캐러셀 콘텐츠의 크기 늘리기  */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+
+#myCarousel{	
+	height: 400px;
+}
+
+.carousel-item img{
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/*Start main slide banner */
+
+slider {width: 40rem;}
+.slide  img{    display: block; width: 1280px;height: 450px;  }
+ 
+ .slick-dots {display: flex;margin: 0;padding: 1rem 0;    list-style-type: none;  position: relative;top: -70px;left: 45%;    }
+.slick-dots li {           margin: 0 0.9rem; cursor: pointer;}   
+.slick-dots button {display: block;width: 1.2rem;height: 1.2rem;padding: 0;border: 2.5px solid  #434343 ;border-radius: 100%;
+background-color: rgba( 255, 255, 255, 0.1 );           text-indent: -9999px;cursor: pointer;}
+.slick-dots li.slick-active button {background-color: #434343;}   
+
+
+
+.slick-prev,.slick-next {font-size: 0;position: absolute;bottom: 20px;color: #fff;;border: 0;background: none;z-index: 1;top: 20px;cursor: pointer;} 
+.slick-prev {left:0px;} 
+.slick-prev:after {content: "\f104";font: 40px/1 'FontAwesome';} 
+.slick-next {right: 0px;text-align: right;}
+.slick-next:after {content: "\f105";font: 40px/1 'FontAwesome';}
+.slick-prev:hover:after,.slick-next:hover:after {color: #7e7e7e;}
+#carousel div {cursor: pointer;} 
+
+/* /////// End of main slide banner */
+
+
+.slick-arrow:focus{ 	
+    border: none !important;
+    outline:none !important;
+    }
+    
+    
+.slick-initialized .slick-slide
+{
+    display: flex;
+    justify-content: center;
+}
+
+.slick-list.draggable{
+	left: -16px;
+}
+
+.ck-editor__editable_inline {
+    min-height: 600px;
+}
+.ck-content{
+   color:#000;
+}
+
+#movie_delete_button{
+    color: #fff;
+    background: #e50914;
+}
+.text-yellow{
+	color: #ffc107;
+	font-weight: bold;
+}
